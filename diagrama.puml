@@ -1,0 +1,28 @@
+@startuml
+Inscripcion --> Alumno
+Alumno -->"*" Materia
+Inscripcion -->"*" Materia
+Materia -->"*" Materia
+
+class Alumno {
+    - nombre: String
+    - materiasAprobadas: Set<Materia>
+
+    + agregarMateriasAprobadas(materias: Set<Materia>)): Void
+    + aprobo(materia: Materia): Boolean
+}
+
+class Inscripcion {
+    - alumno: String
+    - materias: Set<Materia>
+
+    + aprobada(): Boolean
+}
+
+class Materia {
+    - nombre: String
+    - materiasCorrelativas: Set<Materia>
+
+    + agregarCorrelativas(materias: Set<Materia>): Void
+}
+@enduml
