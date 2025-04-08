@@ -11,7 +11,6 @@ public class Materia {
         this.nombre = nombre;
         this.materiasCorrelativas = new HashSet<Materia>();
     }
-    //TODO se pone el constructor en el diagrama?
 
     public Set<Materia> getMateriasCorrelativas() {
         return materiasCorrelativas;

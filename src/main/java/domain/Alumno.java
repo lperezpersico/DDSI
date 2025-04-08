@@ -6,7 +6,6 @@ import domain.Inscripcion;
 public class Alumno {
     private String nombre;
     private HashSet<Materia> materiasAprobadas;
-    //TODO ver como poner un set en el diagrama
 
 
     public Alumno(String nombre) {
